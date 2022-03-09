@@ -1,0 +1,72 @@
+/* Este es el selector de tipo que significa q se le aplica 
+a todos los h1 y h2 de la pagina */
+h1,
+h2
+ {
+    color:rgb(2, 2, 10);
+    font-size: 25px;
+    /*ojo si queremos aplicar un font diferente a los q tenemos
+    podemos ir a https://fonts.google.com/ y desde alli revisando
+    el video vemos como establecemos un link en la seccion head
+    de nuestra pagina y despues solo la podemos usar claro 
+    esto es con internet tambien podemos bajar los font para 
+    nuestros pc */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Esto q esta entre comentarios es el selector 
+universal significa q se le va aplicar a todos los
+elementos de la pagina
+ * {
+ color: antiquewhite;    
+}
+ */
+
+ /* A continuacion selector de tipo clase muy usado porque simplifica el 
+ de tipos ya que puede aplicarse a diferentes etiquetas al mismo tiempo
+ y a una misma etiqueta pueden aplicarsele varias clases  */
+.listas-en-mi-sitio {
+  color:rgb(255, 127, 227);
+}
+
+/*fijarse q el padding es la distancia que hay entre el borde
+de un elemento y el elemento como tal, tambien se pueden definir por separado
+por eje padding-left , padding-right etc , ahora el margin lo q define
+es la distancia con otros elementos es mas bien como separar los elementos
+por ej si tenemos una imagen dentro de un div y queremos dejar una separacion
+entre el div y la imagen..  */
+.tama-de-imagenes {
+  width: 20%;
+  border-width: 2px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 70px;
+  padding: 15px;
+  
+}
+
+.contenedor-listas {
+background-color: rgb(155, 160, 158);
+}
+
+/* ojo a continuacion selector de id, estos
+son unicos dentro de la pagina y en vez de . como las clases
+empiezan con # fijarse q aunque habia un style pa los h2
+este tuvo mas supremacia */
+#h2-Fotos {
+  font-size: 30px;
+  color: green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*
+A continuacion selector de atributos, en este caso esa regla es
+aplicable a todos los img que contengan un atributo alt en su
+interior..
+
+*/
+img[alt]{
+border-radius: 100px;
+padding:0%;
+border-style: none;
+}

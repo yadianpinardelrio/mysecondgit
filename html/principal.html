@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML de prueba</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color: antiquewhite;">
+  <!-- Header -->
+  <header>
+     <!-- Menu de navegacion logo redes sociales etc --> 
+  </header>
+  <main>
+    <!--a continuacion con la etiqueta mark se marca
+    el texto imagenes -->
+    <h1><mark>Imagenes</mark></h1>
+    <!--A continuacion que se creo un link vacio usando # como href
+    y a parte de eso en una pestaña nueva usando el atributo target 
+    y rel es por motivos de seguridad para prevenir un ataque llamado
+    tabnaving-->
+   
+    <h2 id="h2-Fotos">Fotos de <a href="#" target="_blank" rel="noopener noreferrer">Anyi</a> y Joy</h2>
+    
+    <!--a continuacion con la etiqueta s se tacha
+    el texto Parrafos -->
+    <h2 class="listas-en-mi-sitio">Lista de <s>Parrafos</s> del texto</h2>
+    <!--ojo aqui abajo como se hacen links internos en este caso
+    a los parrafos de la pagina..tambien se metio dentro de una 
+    uordered list, si en vez de usar ul usamos ol (ordered list)
+    nos pone numeros en vez de viñetas, tamnbien se metieron en 
+    un contenedor generico div, ojo para indentar a la derecha
+    los elementos del div se hace Ctrol + ] -->
+    <div class="contenedor-listas">
+      <ul>
+      <!--a continuacion con la etiqueta strong se pone mas fuerte
+      el texto parrafo1 dandole mas importancia-->
+      <li class="listas-en-mi-sitio"><a href="#parrafo-1"><strong>parrafo 1</strong></a></li>
+      <!--a continuacion con la etiqueta em se pone en cursiva
+      el texto parrafo2 -->
+      <li><a href="#parrafo-2"><em>parrafo 2</em></a></li>
+      <li><a href="#parrafo-3">parrafo 3</a></li>
+      </ul>
+    </div>
+    <!--A continuacion un hr (horizontal Rule para crear 
+      una linea separadora)-->
+    <hr>
+
+    <!--fijarse que a continuacion se convirtio la primera imagen 
+    en un enlace vacio o DEAD link como se le dice..-->
+    <a href="#"><img src="imagenes/20150627_185338.jpg" alt="Anyi y Joy en el Columpio" class="tama-de-imagenes"></a>
+    <hr>
+    <img  src="imagenes/20150627_193048.jpg"  class="tama-de-imagenes">
+
+    <hr>
+
+    <h3 id="parrafo-1">Parrafo 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sequi, atque, minima ratione, rem accusamus earum harum quisquam ipsum molestiae asperiores placeat voluptas delectus eos sit voluptates. Officiis, sunt similique?</p>
+
+    <h3 id="parrafo-2">Parrafo 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sequi, atque, minima ratione, rem accusamus earum harum quisquam ipsum molestiae asperiores placeat voluptas delectus eos sit voluptates. Officiis, sunt similique?</p>
+
+    <h3 id="parrafo-3">Parrafo 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sequi, atque, minima ratione, rem accusamus earum harum quisquam ipsum molestiae asperiores placeat voluptas delectus eos sit voluptates. Officiis, sunt similique?</p>
+
+    <!--A continuacion etiqueta br (break) para dejar linea en blanco-->
+    <br>
+    <!--A continuacion etiqueta para los formularios
+    fijarse que se invoca la pagina enviar-respuesta una vez pinchado
+    el boton enviar, tambien se puso el campo de required para validar
+    que solo se llame al formulario si se ingreso algun valor-->
+    <h4>Formulario para captar Datos</h4>
+    <form action="/enviar-respuesta">
+    <!--A continuacion creamos un radio donde solo se puede
+    seleccionar una sola opcion a la vez, fijarse q la etiq label 
+    esta por fuera de radio..tambien la etiqueta name para 
+    agruparlos y la etiqueta value para saber el valor a enviar
+    al server, con required requerimos un valor obligaorio--> 
+    <label>
+      <input type="radio" name="int-ext" checked value="interior"> Interior
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="int-ext" value="exterior"> Exterior
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="comoson" checked value="lindos">Lindos </label>
+    <label>
+      <input type="checkbox" name="comoson" value="traviesos">Traviesos
+    </label>
+    <br>
+    <input type="text" placeholder="Teclee Si o No (Te gusto la PAGINA)" required>
+    <button type="submit">Enviar</button>
+    </form>
+
+  </main>
+  <footer>
+      <p><small>Aprendiendo HTML YRG</small></p>
+  </footer>
+    
+</body>
+</html>
